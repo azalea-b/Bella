@@ -6,6 +6,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="assets/css/styles.css">
+  <style>
+    .arrow {
+      width: 30px;
+      height: 30px;
+      border: 5px solid black;
+      border-radius: 50%;
+      position: relative;
+      transform: rotate(45deg);
+    }
+
+    .arrow::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 15px;
+      height: 15px;
+      background-color: black;
+      border-radius: 50%;
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    .arrow::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 30px;
+      height: 5px;
+      background-color: black;
+      transform-origin: left center;
+      transform: rotate(-45deg);
+    }
+  </style>
 </head>
 
 <body>
@@ -14,10 +48,18 @@
     <div id="flipbook" class="flipbook">
       <div class="hard" id="front">
         <div class="content">
+
           <p>Para Minha Princesa</p>
+          <img src="assets/image/isa.jpg" alt="" class="front-image photo">
+          
+          <div class="arrow-open">
+            <span>Abra aqui</span>
+            <img src="assets/image/curved-arrow-icon.svg" alt="" width="20">
+          </div>
+
         </div>
       </div>
-      <div class="hard">s
+      <div class="hard">
         <div class="content">
 
         </div>
@@ -34,7 +76,8 @@
           <p>Bom diaaa minha princesa</p>
           <p>
             Da forma mais nerd que consegui fazer, eu queria tentar colocar em palavras o quanto você é importante pra
-            mim. <br> E olha... nem se eu tivesse todas as linguagens do mundo, eu conseguiria expressar isso com perfeição.
+            mim. <br> E olha... nem se eu tivesse todas as linguagens do mundo, eu conseguiria expressar isso com
+            perfeição.
             Mas vou tentar, porque você merece cada letrinha desse texto.
           </p>
         </div>
@@ -111,8 +154,10 @@
       </div>
       <div class="page">
         <div class="content">
-          <p>A distancia é foda, e o que eu mais queria agora era estar com vc (slk tenho que aprender a me teleportar). <br>
-            Queria te abraçar nem que fosse um minutnho. Mas jaja a gente vai estar juntos e eu não vou te soltar (boa sorte ja que nn gosta de grude) 
+          <p>A distancia é foda, e o que eu mais queria agora era estar com vc (slk tenho que aprender a me teleportar).
+            <br>
+            Queria te abraçar nem que fosse um minutnho. Mas jaja a gente vai estar juntos e eu não vou te soltar (boa
+            sorte ja que nn gosta de grude)
           </p>
 
           <br><br><br>
@@ -125,9 +170,9 @@
           <p>Amo tudo em vc, até os defeitos que vc diz que tem... Cada parte minha, ama cada pedacinho seu!</p>
 
           <br><br><br><br><br><br>
-          
 
-          <p>EU TE AMO MINHA PRINCESA <3</p>
+
+          <p>EU TE AMO MINHA PRINCESA <3< /p>
         </div>
       </div>
       <div class="page">

@@ -39,6 +39,23 @@ audio {
   padding: 4rem 0;
 }
 
+.front-image {
+  width: 260px;
+  filter: grayscale(100);
+  transition: .4s;
+}
+
+.front-image:hover {
+  filter: grayscale(0);
+}
+
+.arrow-open {
+  display: flex;
+  position: absolute;
+  top: 300px;
+  right: 10px;
+}
+
 .flipbook {
   font-family: "Caveat", cursive;
   font-size: 2.6rem;
@@ -52,6 +69,7 @@ audio {
 .flipbook .hard div {
   height: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
