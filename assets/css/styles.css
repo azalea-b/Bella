@@ -1,10 +1,11 @@
 @import "https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap";
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+
 :root {
   --back: #1A2A3B;
   --details: #FF007F;
   --light-purple: #efe5fd;
-  --purple: #A769FF;
+  --purple: #de17f0;
   font-size: 62.5%;
 }
 
@@ -17,7 +18,8 @@
 html,
 body {
   width: 100%;
-  background: var(--light-purple);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../image/background.png') no-repeat;
+  background-size: cover;
   font-size: 1.8rem;
   overflow: hidden;
 }
@@ -41,20 +43,24 @@ audio {
   font-family: "Caveat", cursive;
   font-size: 2.6rem;
 }
+
 .flipbook .hard {
   background: var(--purple);
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
+
 .flipbook .hard div {
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .flipbook .page {
   background: #fff;
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
+
 .flipbook .page .content {
   width: 100%;
   height: 100%;
@@ -68,11 +74,13 @@ audio {
   box-sizing: border-box;
   position: relative;
 }
+
 .flipbook .page .content .photo {
   position: absolute;
   width: 100%;
   height: 50%;
 }
+
 .flipbook .page .content .photo img {
   width: 400px;
   position: absolute;
@@ -81,43 +89,51 @@ audio {
   box-sizing: border-box;
   box-shadow: 2px 1px 5px black;
 }
+
 @media (max-width: 800px) {
   .flipbook .page .content .photo img {
     width: 300px;
   }
 }
+
 .flipbook .page .content .photo.top {
   top: 10px;
   left: 60px;
   transform: rotate(-5deg);
   /* A imagem de cima levemente inclinada */
 }
+
 @media (max-width: 1100px) {
   .flipbook .page .content .photo.top {
     top: 14px;
     left: 24px;
   }
 }
+
 .flipbook .page .content .photo.bottom {
   bottom: 200px;
   left: 100px;
   transform: rotate(5deg);
 }
+
 @media (max-width: 1100px) {
   .flipbook .page .content .photo.bottom {
     bottom: 110px;
     left: 46px;
   }
 }
+
 .flipbook .page .content .text-bottom {
   position: absolute;
-  bottom: 140px;
+  bottom: 120px;
 }
+
 @media (max-width: 1100px) {
   .flipbook .page .content .text-bottom {
     bottom: 0;
   }
 }
+
 .flipbook .page .content .post-it {
   width: 200px;
   height: 200px;
@@ -130,6 +146,7 @@ audio {
   font-family: Arial, sans-serif;
   font-size: 16px;
 }
+
 .flipbook .page .content .post-it::after {
   content: "";
   position: absolute;
@@ -143,23 +160,28 @@ audio {
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
   margin-left: -10px;
 }
+
 .flipbook .page .content .post-it p {
   margin: 0;
   color: #333;
 }
+
 .flipbook p {
   margin-bottom: 20px;
   letter-spacing: 0.5px;
 }
+
 @media (max-width: 1100px) {
   .flipbook {
     font-size: 1.8rem;
   }
 }
+
 .flipbook svg {
   position: absolute;
   bottom: 5rem;
 }
+
 .flipbook svg #line {
   fill: none;
   stroke: #e00000;
@@ -172,6 +194,7 @@ audio {
   stroke-dashoffset: 1;
   animation: dash 3s linear infinite;
 }
+
 .flipbook svg #point {
   fill: none;
   stroke: #f00000;
@@ -184,13 +207,16 @@ audio {
   stroke-dashoffset: 1;
   animation: dash 3s linear infinite;
 }
+
 @keyframes dash {
   0% {
     stroke-dashoffset: 1;
   }
+
   80% {
     stroke-dashoffset: 0;
   }
+
   100% {
     stroke-dashoffset: 0;
   }
