@@ -1,0 +1,73 @@
+:root {
+  --back: #1A2A3B;
+  --details: #FF007F;
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  background: var(--back);
+  font-size: 1.8rem;
+}
+
+.wrapper-view {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  padding: 4rem 0;
+}
+
+.hard {
+  background: var(--details);
+}
+
+.flipbook { 
+  width: 120rem;
+  height: 70rem;
+}
+
+.flipbook .page {
+  background: #fff;
+}
+
+audio {
+  display: none;
+}
+
+img {
+  width: 60rem;
+}
+
+.neon-button {
+  background-color: #1A2A3B;  /* Fundo escuro */
+  color: #FF007F;  /* Texto rosa neon */
+  border: 2px solid #FF007F;
+  padding: 15px 30px;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 5px #FF007F, 0 0 15px #FF007F;
+}
+
+.neon-button:hover {
+  box-shadow: 0 0 20px #FF007F, 0 0 30px #FF007F;
+  transform: scale(1.05);
+}
+
+
+@media screen and (min-width: 720px) {
+  
+}
